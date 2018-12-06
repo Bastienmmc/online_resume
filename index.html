@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <div class="banner jumbotron" id="home">
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-offset-2 col-lg-6">
+                        <h1 style="text-align: right">Bastien Chartier</h1>
+                        <h3 style="text-align: right">Concepteur d'applications</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="logo" src="img/logo_char_at.png">
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home">Accueil</a></li>
+                    <li><a href="#skills">Competences</a></li>
+                    <li><a href="#education">Formation</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#portfolio">Réalisations</a></li>
+                    <!-- <li><a href="#contact">Contact</a></li> -->
+                    <li data-toggle="modal" href="remote.html" data-target="#infos"><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="modal fade" id="infos">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                    <h4 class="modal-titel">Contactez-moi:</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="test.php">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" class="form-control" name="nom" id="nom" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea class="form-control" name="message" id="message" placeholder="Votre Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-info" data-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div id="skills">
+            <div class="container">
+                <div class="row">
+                    <h1 class="well col-xs-12 title">Compétences</h1>
+                </div>
+                <div class="row ">
+                    <div class="well col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-10">
+
+                        <!-- <div class="row">
+                            <div class="col-lg-offset-1 col-lg-10"> -->
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 panel skillbox absrev">
+
+                                        <div class="panel-heading">
+
+                                            <h3 class="panel-title">
+                                                <img src="img/designico.png" alt="ico web design" class="ico">
+                                                <br> Conception
+                                            </h3>
+                                        </div>
+                                        <!-- <div id="item3"> -->
+                                            <div class="panel-body">Web Design <br>
+                                                Intégration de maquette <br>
+                                                Retouche Photo <br>
+                                                Identité visuelle <br>
+                                                Logo </div>
+                                        <!-- </div> -->
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 panel skillbox absrev">
+                                        <div class="panel-heading">
+
+                                            <h3 class="panel-title">
+                                                <img src="img/progico.png" alt="icone programmation" class="ico">
+                                                <br> Programmation
+                                            </h3>
+                                        </div>
+                                        <!-- <div id="item3"> -->
+                                            <div class="panel-body">
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            Développement Android
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Java
+                                                        </td>
+                                                        <td>
+                                                            Php
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>MySql</td>
+                                                        <td>Mongo Db</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Javascript
+                                                            </ttdr>
+                                                        <td>NodeJs</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Jquery
+                                                        </td>
+                                                        <td>
+                                                            HTML 5
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            CSS3
+                                                        </td>
+                                                        <td>Bootstrap</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 panel skillbox absrev">
+                                        <div class="panel-heading">
+
+                                            <h3 class="panel-title">
+                                                <img src="img/gestionico.png" alt="icone gestion de projet" class="ico">
+                                                <br> Gestion de Projet
+                                            </h3>
+                                        </div>
+                                        <!-- <div id="item3"> -->
+                                            <div class="panel-body">
+                                                Design Pattern <br>
+                                                Cahier de charges <br>
+                                                Travail collaboratif distant (Jira)<br>
+                                                Gestion des versions (Git) <br>
+                                                Test Unitaires (PhpUnit, Jest)
+                                            </div>
+                                        </div>
+                                    <!-- </div> -->
+                                    <!-- </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-10"> -->
+                                    <!-- <div class="row"> -->
+                                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 panel skillbox absrev">
+
+                                            <div class="panel-heading">
+
+                                                <h3 class="panel-title">
+                                                    <img src="img/commercialicoico.png" alt="icone relation commerciale"
+                                                        class="ico">
+                                                    <br> Commercial
+                                                </h3>
+                                            </div>
+                                            <!-- <div id="item3"> -->
+                                                <div class="panel-body">Relation client <br>
+                                                    Suivi d'affaire <br>
+                                                    Remise d'offres <br>
+                                                    Gestion SAV 
+                                                </div>
+                                            </div>
+                                        <!-- </div> -->
+                                        <div class="col-lg-4 col-md-0 col-sm-0 col-xs-0  ">
+
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 panel skillbox absrev">
+                                            <div class="panel-heading">
+
+                                                <h3 class="panel-title ">
+                                                    <img src="img/personal-skillsico.png" alt="icone competences personnelles"
+                                                        class="ico">
+                                                    <br> Compétences personnelles
+                                                </h3>
+                                            </div>
+                                            <!-- <div id="item3"> -->
+                                                <div class="panel-body">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                Teamwork
+                                                            </td>
+                                                            <td>
+                                                                Management
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Communication
+                                                            </td>
+                                                            <td>
+                                                                Diplomatie
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Organisation</td>
+                                                            <td>Disponibilité</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                Créativité
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        <!-- </div>
+    </div> -->
+
+
+    <div id="education">
+        <div class="container">
+            <div class="row">
+                <h1 class="well col-xs-12 title">Formations</h1>
+            </div>
+            <div class="row">
+                <div class="well col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-10">
+
+                    <div class="row">
+
+                        <div class="panel panel-primary col-lg-offset-2 col-lg-8">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    TITRE PROFESSIONNEL NIVEAU II :
+                                    CONCEPTEUR D’APPLICATIONS MOBILES
+                                </h3>
+                            </div>
+                            <div id="item3">
+                                <div class="panel-body"> LDNR - Labège (31) <br><span class="glyphicon glyphicon-calendar"></span>
+                                    sep 2018
+                                    -
+                                    juil 2019 </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary col-lg-offset-2 col-lg-8">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    BTS AMENAGEMENTS PAYSAGERS
+                                </h3>
+                            </div>
+                            <div id="item3">
+                                <div class="panel-body">Lycee Desclaudes - Saintes (17) <br><span class="glyphicon glyphicon-calendar"></span>
+                                    Sep 2005 - Juin 2007 </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary col-lg-offset-2 col-lg-8">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    DEM GUITARE CLASSIQUE
+                                </h3>
+                            </div>
+                            <div id="item3">
+                                <div class="panel-body"> Conservatoire National de Région - Angouleme (16) <br><span
+                                        class="glyphicon glyphicon-calendar"></span>
+                                    Sep 2000 - Juin 2004 </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary col-lg-offset-2 col-lg-8">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    DEUG MIAS (Mathématiques et Informatique Appliqués aux Sciences)
+                                </h3>
+                            </div>
+                            <div id="item3">
+                                <div class="panel-body"> Faculté de Sciences - La Rochelle (17) <br> <span class="glyphicon glyphicon-calendar"></span>
+                                    Sep 1998 - Juin 2000 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="experiences">
+        <div class="container">
+            <div class="row">
+                <h1 class="well col-xs-12 title">Expériences professionnelles</h1>
+            </div>
+            <div class="row">
+                <div class="well col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-10">
+
+                    <div class="row">
+
+                        <div class="col-lg-offset-1 col-lg-10">
+                            <ul class="timeline">
+                                <li class="timeline">
+                                    <div class="timeline-badge"><i class="fa fa-envelope-o"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">TECHNICO-COMMERCIAL<br>TOITURES
+                                                VEGETALISEES</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> <span class="glyphicon glyphicon-calendar"></span>
+                                                    Avr 2010 - Dec 2017</small></p>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> <span class="glyphicon glyphicon-home"></span>
+                                                    Soprema SAS - Région Sud Ouest</small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Responsable secteur de la prescription au SAV. <br>
+                                                Relation Client, Suivi d’Affaires, Gestion sous-traitance. <br>
+                                                Contrats d’entretien, SAV.</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge"><i class="fa fa-envelope-o"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">CHEF D’EQUIPE PAYSAGISTE</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> <span class="glyphicon glyphicon-calendar"></span>
+                                                    Mar-Nov 2009</small></p>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> <span class="glyphicon glyphicon-globe"></span>
+                                                    CUTTING EDGE- WINDSOR CANADA</small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Création et entretien de jardins privés et d’espaces vert
+                                                publics.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline">
+                                    <div class="timeline-badge"><i class="fa fa-envelope-o"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">TECHNICIEN BUREAU D’ETUDE <br>
+                                                PAYSAGISTE</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> <span class="glyphicon glyphicon-calendar"></span>
+                                                    Sep 2005 - Mar 2009</small></p>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> <span class="glyphicon glyphicon-home"></span>
+                                                    JARDINS YVES COURTEY - La Rochelle (17)</small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Conception et réalisation de jardins privés, productions de
+                                                supports de présentation <br>
+                                                Réalisation et entretien d’espaces verts.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1 class="well col-xs-12 title">Réalisations</h1>
+            </div>
+            <div class="row">
+                <div class="well col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-10">
+
+                    <div class="row">
+
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/site-stagiaires.png" alt="site de présentation de stagiaires LDNR" class="img-rounded">
+                                <div class="caption">
+                                    <h3>Site de recrutement de Stagiaires</h3>
+                                    <p>Site double page de présentation des stagiaires de la formation LDNR
+                                        2018/2019 Concepteur d'Applications Mobiles</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Visitez</a> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/site-convertisseur.png" alt="Application web de conversion" class="img-rounded">
+                                <div class="caption">
+                                    <h3>Application de conversion</h3>
+                                    <p>Application double page de conversion d'unités de mesures</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Visitez</a> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/site-paysagiste.png" alt="site internet de paysagiste" class="img-rounded">
+                                <div class="caption">
+                                    <h3>Site de Paysagiste</h3>
+                                    <p>Conception et création d'un Site internet et identité visuelle d'un bureau
+                                        d'étude paysagiste.
+                                    </p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Visitez</a> </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer class="jumbotron"></footer>
+
+
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
