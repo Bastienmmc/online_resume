@@ -35,6 +35,10 @@ $(window).on('resize', function () {
     });
 });
 
- $('.nav a').on('click', () => $('button.navbar-toggle').click());
+$('.nav a').on('click', () => $('button.navbar-toggle').click());
+
+$(function () {
+    $('.carousel').carousel({ interval: 4000 });
+});
 
 
