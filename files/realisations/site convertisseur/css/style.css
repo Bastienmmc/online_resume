@@ -1,0 +1,269 @@
+/* Color Themes
+https: //coolors.co/982649-7c8483-71a2b6-60b2e5-53f4ff
+red #982649
+grey #7C8483
+blue/grey #71A2B6
+blue #60B2E5
+light orange #d0beb5
+*/
+
+body {
+    width: 1024px;
+    margin: auto;
+    padding: 0;
+    font-family: 'KoHo', sans-serif;
+}
+header {
+    text-align: center;
+    background-color: #60B2E5;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around
+}
+ul {
+    margin-top: 20%
+}
+li {
+    display: block;
+    list-style-type: none;
+    text-align: left;
+    background-color: #982649;
+    line-height: 30px;
+    padding: 0 15px;   
+}
+a {
+    text-decoration: none;
+    font-size: 1.1em;    
+    color: white;
+}
+h1 {
+    font-size: 2.3em;
+/*    margin: 1%;*/
+}
+#title {
+    margin-left: 10%;
+}
+
+section {
+    padding: 20px 40px;
+    display: flex;
+/*    width: 864px;*/
+    background-color: rgba(201, 200, 200, 0.62);
+    margin: auto
+}
+
+#main {
+    min-height: 560px;
+    width: 750px;
+    padding: 0 2%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+/*    height: 80px;*/
+    background-color: #7C8483;
+    padding: 3%
+}
+
+#pub {
+    min-width: 250px;
+    height: 600px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url(../img/pub.png);
+}
+
+#buttons_type {
+/*    min-height: 100px;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+      
+}
+
+button,
+input[type=submit] {
+    height: 50px;
+    width: 120px;
+    background-color: #982649;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 15px;
+    display: inline-block
+}
+
+button:hover,
+input[type=submit]:hover, li:hover, li:hover>a {
+    background-color: #ffa500;
+    color: black
+}
+
+button,
+input[type=submit],
+#result,
+#formula,
+#button_convert {
+    align-self: center;
+}
+
+input[type=submit] {
+    background-color: #60B2E5;
+    color: black;
+    font-weight: bold;
+    width: 160px;
+    box-shadow: 0 9px #7C8483;
+    text-shadow: 1px 1px white
+}
+
+input[type=submit]:active {
+    box-shadow: 0 5px #7C8483;
+    transform: translateY(4px);
+}
+
+#error {
+    font-size: 1.2em;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+
+/*    height: 40px;*/
+
+}
+
+#resume {
+    text-align: center;
+    height: 40px;
+    margin-top: 4%;
+    overflow: hidden
+}
+
+#infos_area {
+    display: flex;
+    justify-content: space-around;
+/*    height: 100px;*/
+    text-align: center;
+    margin: 5% 0;
+    padding: 5% 0;
+}
+
+#input_unit,
+#input_area,
+#output_unit {
+    display: inline-block;
+    align-self: center
+}
+
+select {
+    width: 150px
+}
+
+.units label {
+    font-size: 1.3em;
+    margin: 10px;
+    display: block;
+}
+
+#input_area label {
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: block;
+}
+
+#input_number_area {
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.2em
+}
+
+#input_decimal_area {
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+    height: 25px;
+    font-size: 1.2em
+}
+
+#input_number_area,
+#input_unit_select,
+#output_unit_select,
+textarea,
+select,
+#input_decimal_area,
+.results_area {
+    border-radius: 5px;
+    border-color: #982649
+}
+
+.results_area {
+    /* display: inline; */
+    background-color: white;
+    height: 60px;
+    width: 600px;    
+    margin: 5px auto;
+    /* border: 1px solid black; */
+    text-align: center;
+    line-height: 50px;
+    /* overflow: scroll */    
+}
+
+#buttons_confirm {
+    display: flex;
+    justify-content: center;
+}
+#button_exec {
+    margin-right: 20px
+}
+
+#input_unit_select:hover,
+#output_unit_select:hover {
+    background-color: #982649;
+    color: white;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1%
+}
+p {
+    padding: 0;
+}
+
+#display_areas {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4em;
+    font-weight: bold; 
+}
+
+/* Mise en forme des tableaux */
+#tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table {
+    display: block;
+    margin: auto;
+    height: 150px;
+    padding-top: 5%;
+}
+td {
+    padding: 8px;
+    font-size: 1.1em;
+    font-weight: 400
+}
+th {
+    font-size: 1.4em;
+}
+td:hover {
+    background-color: #982649;
+    color: white;
+}

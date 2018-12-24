@@ -58,9 +58,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.modal-backdrop {
-    opacity: 0;
-    transition: opacity .2s;
+.modal-backdrop.in {
+    opacity: 0.5 !important;
 }
 
 .modal-backdrop.in {
@@ -129,7 +128,7 @@ li a:hover {
 }
 
 .banner {
-    background-image: url('abstract.jpg');
+    background-image: url('img/abstract.jpg');
     display: table;
     width: 100%;
 }
@@ -179,7 +178,7 @@ h3 {
 }
 
 .title {
-    background-image: url('abstract.jpg');
+    background-image: url('img/abstract.jpg');
     color: white;
     background-position: 45%
 }

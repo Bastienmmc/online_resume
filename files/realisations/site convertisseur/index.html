@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+    <title>Convertisseur gratuit</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="title">
+            <h1>Convertisseur gratuit</h1>
+            <h3>Usez et abusez-en, il vous est offert par les stagiaires de LDNR</h3>
+        </div>
+        <div id="nav_menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="liste.html">Liste des unités acceptées</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div id="main">
+            <div id="intro">
+                <p>Commencez par choisir un type d'unité de mesure, puis les unités <br />
+                    Entrez ensuite votre valeur à convertir et le nombre de décimales souhaitées<br />
+                    Vous n'avez plus qu'à valider pour obtenir le résultat, ou effacer pour recommencer à zéro</p>
+            </div>
+            <div id="buttons_type">
+                <button id="mass" type="button" onclick="displayUnit(massUnits)">Masse</button>
+                <button id="distance" type="button" onclick="displayUnit(distanceUnits)">Distance</button>
+                <button id="temp" type="button" onclick="displayUnit(tempUnits)">Température</button>
+
+
+            </div>
+
+            <form id="form">
+
+                <div id="infos_area">
+                    <div id="input_unit" class="units">
+                        <div>
+                            <label for="input_unit_select">Unité d'entrée</label>
+                        </div>
+                        <div>
+                            <select id="input_unit_select" name="input_unit"></select>
+                        </div>
+
+                    </div>
+                    <div id="input_area">
+                        <div>
+                            <input type="number" id="input_number_area" name="input_number" placeholder="Valeur à convertir">
+                        </div>
+                        <div>
+                            <label for="input_decimal_area"> Précision décimale souahitée (max 20)</label>
+                            <input type="number" id="input_decimal_area" name="input_decimal" placeholder="0"
+                                min="0" max="20" value="2">
+                        </div>
+                    </div>
+                    <div id="output_unit" class="units">
+                        <div>
+                            <label for="output_unit_select">Unité de sortie</label>
+                        </div>
+                        <div>
+                            <select id="output_unit_select" name="output_unit"></select>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="error" type="text">
+                    <!--cld Text d'erreur à afficher ici -->
+
+                </div>
+
+                <div id="buttons_confirm">
+                    <div id="button_exec">
+                        <button type="submit" id="button_convert" value="Convertir">Convertir</button>
+                    </div>
+                    <div id="button_reset">
+                        <button type="reset" id="button_reset" value="effacer">Effacer</button>
+                    </div>
+                </div>
+                <div id="resume">
+                    <p>
+                        <!--Text de résumé à afficher ici -->
+                    </p>
+                </div>   
+                <div id="display_areas">
+                    <div class="results_area">
+                        
+                        <div id="result" type="text"></div>
+                    </div>
+                    <div class="results_area">
+                        
+                        <div id="formule" type="text"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="pub">
+
+        </div>
+
+    </section>
+    <footer id="footer">
+        <div id="choices_table">
+            <a href="#">Liste des unités acceptés</a>
+        </div>
+        <div id="choices_table">
+            <p>&copy;CLDBCH - 2018</p>
+        </div>
+    </footer>
+    <script src="js/table_conversion.js"></script>
+    <script src="js/interaction.js"></script>
+    <script src="js/conversion.js"></script>
+</body>
+
+</html>

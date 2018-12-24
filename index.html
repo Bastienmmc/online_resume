@@ -19,7 +19,7 @@
     <title>Bastien Chartier</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" id="pageContent">
+<body data-spy="scroll" data-target=".navbar">
     <!-- 
                     #################################################
                     #                                               #
@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img class="logo" src="img/logo_char_at.png">
+                <a href="#home"><img class="logo" src="img/logo_char_at.png"></a>
             </div>
 
             <div class="collapse navbar-collapse">
@@ -58,7 +58,7 @@
                     <li><a href="#education">Formation</a></li>
                     <li><a href="#experiences">Experiences</a></li>
                     <li><a href="#portfolio">Réalisations</a></li>
-                    <li data-toggle="modal" href="remote.html" data-target="#infos"><a href="#">Contact</a></li>
+                    <li data-toggle="modal" data-target="#infos"><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     #                                               #
                     #################################################
                     -->
-    <div class="modal fade" id="infos" role="dialog">
+    <div class="modal fade in" id="infos" role="dialog">
         <div class="modal-dialog ">
             <div class="modal-content">
                 <div class="modal-header">
@@ -81,13 +81,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="social-buttons">
-                        <a class="social-button linkedin" type="linkedin" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
-                        <a class="social-button email" type="email" href="#"><i class="fa fa-envelope"></i></a>
-                        <a class="social-button twitter" type="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="social-button linkedin" type="linkedin" target="_blank" href="http://www.linkedin.com/in/bastien-chartier-cam"><i class="fa fa-linkedin"></i></a>
+                        <a class="social-button email" type="email" href="mailto:contact@bchartier.fr"><i class="fa fa-envelope"></i></a>
+<a class="social-button twitter" type="twitter" target="_blank" href="https://twitter.com/BastienChartier?lang=fr"><i
+        class="fa fa-twitter" aria-hidden="true"></i></a>
                      </div>
                 </div>
                 <div class="modal-header">
-                    <h4 class="modal-titel" style="text-align: center">Téléchargez mon CV (format pdf)</h4>
+                    <a href="files/resume_bchartier.fr.pdf" target="blank"><h4 class="modal-titel" style="text-align: center">Téléchargez mon CV (format pdf)</h4>
+                    </a>
                 
                 </div>
                 <div class="modal-body">
@@ -418,11 +420,10 @@
                                 <!------------------------------ITEM------------------>
                                 <div class="item active">
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-12">
-                                            <a href="#"><img src="img/site-stagiaires.png" alt="site de présentation de stagiaires LDNR"
-                                                    class="img-rounded"></a>
+                                        <div class="col-lg-offset-1 col-lg-6 col-md-12">
+                                            <a href="files/realisations/site_stagiaires/index.html" target="blank"><img src="img/site-stagiaires.png" alt="site de présentation de stagiaires LDNR" class="img-rounded"></a>
                                         </div>
-                                        <div class="col-lg-offset-1 col-lg-5 col-md-12">
+                                        <div class="col-lg-offset-0 col-lg-4 col-md-12">
                                             <div class="caption">
                                                 <h3>Site de recrutement de Stagiaires</h3>
                                                 <p>Site double page de présentation des stagiaires de la formation LDNR
@@ -434,11 +435,10 @@
                                 <!------------------------------ITEM------------------>
                                 <div class="item">
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-12">
-                                            <a href="#"><img src="img/site-convertisseur.png" alt="Application web de conversion"
-                                                    class="img-rounded"></a>
+                                        <div class="col-lg-offset-1 col-lg-6 col-md-12">
+                                            <a href="files/realisations/site convertisseur/index.html" target="blank"><img src="img/site-convertisseur.png" alt="Application web de conversion" class="img-rounded"></a>
                                         </div>
-                                        <div class="col-lg-offset-1 col-lg-5 col-md-12">
+                                        <div class="col-lg-offset-0 col-lg-4 col-md-12">
                                             <div class="caption">
                                                 <h3>Application de conversion</h3>
                                                 <p>Application double page de conversion d'unités de mesures</p>
@@ -449,11 +449,10 @@
                                 <!------------------------------ITEM------------------>
                                 <div class="item">
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-12">
-                                            <a href="#"><img src="img/site-paysagiste.png" alt="site internet de paysagiste"
-                                                    class="img-rounded"></a>
+                                        <div class="col-lg-offset-1 col-lg-6 col-md-12">
+                                            <a href="files/realisations/site_paysagiste/index.html" target="blank"><img src="img/site-paysagiste.png" alt="site internet de paysagiste" class="img-rounded"></a>
                                         </div>
-                                        <div class="col-lg-offset-1 col-lg-5 col-md-12">
+                                        <div class="col-lg-offset-0 col-lg-4 col-md-12">
                                             <div class="caption">
                                                 <h3>Site de Paysagiste</h3>
                                                 <p>Conception et création d'un Site internet et identité visuelle d'un
@@ -485,7 +484,7 @@
                     #################################################
                     -->
     <footer class="jumbotron">
-        <h4>&copy;BASTIEN CHARTIER 2018</h4>
+    <h4>&copy;BASTIEN CHARTIER 2018</h4>
     </footer>
 
     <!-- 
@@ -496,13 +495,10 @@
                     #################################################
                     -->
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- Javascript de Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <!-- <script src="jquery.js"></script>
-    <script src="bootstrap.js"></script> -->
-    <script src="script.js"></script>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+{
+  "name": "site_convertisseur",
+  "version": "1.0.0",
+  "description": "Page internet servant à convertir des données diverses",
+  "main": "chiffcesar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bchartier LChristine",
+  "license": "ISC"
+}
