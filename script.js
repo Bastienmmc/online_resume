@@ -41,4 +41,9 @@ $(function () {
     $('.carousel').carousel({ interval: 4000 });
 });
 
+// $('#modal').on('shown.bs.modal', function () {
+//     $('#infos').trigger('focus')
+// });
+//when modal opens
+
 
