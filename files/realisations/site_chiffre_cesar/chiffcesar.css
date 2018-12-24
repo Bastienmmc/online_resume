@@ -1,0 +1,35 @@
+body {
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    background-color: #817171;
+}
+
+#main {
+    text-align: center;
+    height: 640px;
+    max-width: 1280px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#conteneur {
+    position: relative;
+    max-width: 70%;
+    top: 15%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 250px;
+    background-color: rgba(201, 153, 97, 0.54);
+}
+
+#imageFond {
+    position: absolute;
+}
+
+#phCode,
+#phrase {
+    width: 400px;
+    background-color: white;
+    margin-bottom: 30px
+}
